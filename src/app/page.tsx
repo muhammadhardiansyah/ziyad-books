@@ -184,7 +184,7 @@ export default async function Home() {
 
             {/* WHATSAPP - HIJAU */}
             <Link
-              href="https://wa.me/6281225514000"
+              href="https://wa.me/6282241293721"
               target="_blank"
               className="group p-10 bg-[#e8f5e9] rounded-[3rem] border-4 border-transparent hover:border-[#43a047] hover:bg-white transition-all duration-500 text-center shadow-xl shadow-green-100/50"
             >

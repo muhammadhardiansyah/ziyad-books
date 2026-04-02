@@ -61,7 +61,7 @@ export const useCart = create<CartStore>()(
                 const { items } = get(); // Ambil items dari store saat ini
                 if (items.length === 0) return;
 
-                const phoneNumber = "62895401931602";
+                const phoneNumber = "6282241293721";
                 let message = "*PESANAN BARU*\n\n";
 
                 items.forEach((item, index) => {
