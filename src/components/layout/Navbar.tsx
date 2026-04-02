@@ -155,14 +155,6 @@ export default function Navbar() {
                         <button className="w-full py-3.5 bg-[#43a047] text-white font-bold rounded-xl shadow-lg shadow-green-50">
                             Masuk / Daftar
                         </button>
-                        <div className="relative">
-                            <input
-                                type="text"
-                                placeholder="Cari buku..."
-                                className="w-full pl-10 pr-4 py-3 bg-slate-100 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#43a047]/20"
-                            />
-                            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
-                        </div>
                     </div>
                 </div>
             </div>
