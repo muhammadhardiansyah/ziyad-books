@@ -109,18 +109,6 @@ export default async function Home() {
               </h2>
               <p className="text-slate-500">Menampilkan {products.length} koleksi buku terbaru untuk buah hati</p>
             </div>
-
-            {/* SEARCH BAR - Fokus Hijau Ziyad */}
-            <div className="relative w-full md:w-80">
-              <input
-                type="text"
-                placeholder="Cari buku favorit..."
-                className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#43a047]/20 focus:border-[#43a047] transition-all"
-              />
-              <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
-              </div>
-            </div>
           </div>
 
           {/* GRID */}
