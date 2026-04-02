@@ -2,6 +2,17 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import { Quicksand } from "next/font/google";
+import Navbar from "@/components/layout/Navbar";
+import CartDrawer from "@/components/cart/CartDraw";
+import { Toaster } from "react-hot-toast";
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  weight: ['300', '400', '500', '600', '700']
+});
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,7 +38,24 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className={`min-h-full flex flex-col ${quicksand.className}`}>
+        <Navbar />
+        {children}
+        <CartDrawer />
+        <Toaster 
+          position="bottom-right" // Muncul di pojok kanan bawah
+          toastOptions={{
+            duration: 3000,
+            style: {
+              background: '#ffffff',
+              color: '#334155',
+              borderRadius: '16px',
+              fontWeight: 'bold',
+              border: '2px solid #e2e8f0'
+            },
+          }} 
+        />
+      </body>
     </html>
   );
 }
