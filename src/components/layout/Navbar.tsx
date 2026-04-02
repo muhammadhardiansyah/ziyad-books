@@ -37,9 +37,9 @@ export default function Navbar() {
     return (
         <nav
             className={cn(
-                "fixed top-0 w-full z-[100] transition-all duration-500",
-                isScrolled
-                    ? "bg-white/90 backdrop-blur-lg border-b border-slate-200 py-3 shadow-sm"
+                "fixed top-0 w-full z-[100] transition-all duration-500 ease-in-out",
+                (isScrolled || isMobileMenuOpen)
+                    ? "bg-white border-b border-slate-200 py-3 shadow-sm"
                     : "bg-transparent py-6"
             )}
         >
